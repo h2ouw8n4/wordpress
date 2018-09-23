@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
 
     && pecl install redis-3.1.4 imagick-3.4.3 libsodium-2.0.10 \
     && docker-php-ext-enable redis imagick sodium \
-    && docker-php-ext-install -j$(nproc) pdo_mysql exif gettext intl sockets zip
+    && docker-php-ext-install -j$(nproc) pdo pdo_mysql exif gettext intl sockets zip
 
 RUN curl -o /bin/wp-cli.phar https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 COPY wp-su.sh /bin/wp
