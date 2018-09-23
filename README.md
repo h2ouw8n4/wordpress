@@ -1,4 +1,4 @@
 # GKE WordPress Docker Image
 **WordPress - PHP-FPM Docker image with Redis extensions**
 
-This WordPress image was created for [GKE WordPress]
+This WordPress image was created for [GKE WordPress].
